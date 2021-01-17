@@ -1,0 +1,5 @@
+name: Lefetz common
+type: module
+description: 'Common of Anime lefetz website.'
+package: Common
+core_version_requirement: 9.*

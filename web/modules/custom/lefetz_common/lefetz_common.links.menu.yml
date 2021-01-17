@@ -1,0 +1,3 @@
+entity.node.canonical:
+  deriver: '\Drupal\lefetz_common\Plugin\Deriver\CustomNodeMenuLinkDeriver'
+  route_name: entity.node.canonical

@@ -1,0 +1,13 @@
+.buildpath
+.editorconfig
+.project
+/console
+/package-lock.json
+/scripts/assets/node_modules
+/web/core
+/web/modules/contrib/
+/web/profiles/contrib/
+vendor
+web/themes/lefetz_anime/assets/css/*
+/web/sites/default/files/*
+/web/themes/contrib

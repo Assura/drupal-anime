@@ -1,0 +1,88 @@
+<?php
+
+use Drupal\Core\Url;
+
+function lefetz_common_preprocess_node(&$variables) {
+ /** @var \Drupal\node\Entity\Node */
+ $node = $variables['node'];
+
+  if ($node->bundle() == 'anime'
+    && $variables['view_mode'] == 'teaser') {
+
+    if ($node->hasField('field_external_url')
+      && !$node->get('field_external_url')->isEmpty()) {
+
+       if ($node->get('field_external_url')->count() == 1) {
+        $value = $node->get('field_external_url')->getValue()[0];
+        $variables['content']['field_external_url'] = [
+          '#type' => 'link',
+          '#title' => !empty($value['title']) ? $value['title'] : t('See video'),
+          '#url' => Url::fromUri($value['uri']),
+          '#attributes' => [
+            'target' => '_blank',
+            'class' => [
+              'btn',
+              'btn-secondary',
+            ],
+          ],
+        ];
+       }
+       elseif ($node->get('field_external_url')->count() > 1) {
+        $variables['content']['field_external_url'] = [
+          '#type' => 'html_tag',
+          '#tag' => 'div',
+          '#attributes' => [
+            'role' => 'group',
+            'class' => [
+              'btn-group'
+            ]
+          ],
+          'button' => [
+            '#type' => 'html_tag',
+            '#tag' => 'button',
+            '#attributes' => [
+              'id' => 'btnGroup' . $node->id(),
+              'data-toggle' => 'dropdown',
+              'type' => 'button',
+              'aria-expanded' => 'false',
+              'class' => [
+                'btn',
+                'btn-secondary',
+                'dropdown-toggle',
+              ],
+            ],
+            '#value' => t('See video'),
+          ],
+          'menu' => [
+            '#type' => 'html_tag',
+            '#tag' => 'ul',
+            '#attributes' => [
+              'aria-labelledby' => 'btnGroup' . $node->id(),
+              'class' => [
+                'dropdown-menu',
+              ],
+            ],
+          ],
+        ];
+
+        foreach ($node->get('field_external_url')->getValue() as $value) {
+         $variables['content']['field_external_url']['menu'][] = [
+           '#type' => 'html_tag',
+           '#tag' => 'li',
+           'link' => [
+             '#type' => 'link',
+             '#url' => Url::fromUri($value['uri']),
+             '#title' => !empty($value['title']) ? $value['title'] : t('See video'),
+             '#attributes' => [
+               'target' => '_blank',
+               'class' => [
+                 'dropdown-item',
+               ],
+             ],
+           ]
+         ];
+        }
+       }
+    }
+  }
+}
