@@ -1,0 +1,11 @@
+uuid: b562610e-2516-41dc-b4e3-b202d0381574
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.anime
+id: node.anime
+target_entity_type_id: node
+target_bundle: anime
+default_langcode: site_default
+language_alterable: false

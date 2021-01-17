@@ -1,0 +1,20 @@
+uuid: 8eb4cb3b-32e8-483f-8348-c11efb5cd698
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: lefetz_anime_page_title
+theme: lefetz_anime
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

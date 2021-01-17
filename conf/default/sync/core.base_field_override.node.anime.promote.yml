@@ -1,0 +1,22 @@
+uuid: 35858d37-3350-41f4-813b-39d0fb63f958
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.anime
+id: node.anime.promote
+field_name: promote
+entity_type: node
+bundle: anime
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

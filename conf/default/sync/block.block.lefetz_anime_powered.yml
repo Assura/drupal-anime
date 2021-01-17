@@ -1,0 +1,22 @@
+uuid: 7cd27450-5a2d-4d98-a885-f3d7bafe07e7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: lefetz_anime_powered
+theme: lefetz_anime
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

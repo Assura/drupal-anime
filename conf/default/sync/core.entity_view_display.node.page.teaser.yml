@@ -1,0 +1,21 @@
+uuid: 3f2d9d27-f357-4a57-970c-6a5a15c4c9bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true

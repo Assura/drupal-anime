@@ -1,0 +1,17 @@
+uuid: c5de091a-b76a-456a-9fb5-afff59fa771b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Animé
+type: anime
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

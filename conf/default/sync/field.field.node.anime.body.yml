@@ -1,0 +1,23 @@
+uuid: 6857a861-12e8-4847-95c2-dffd78d0ba58
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.anime
+  module:
+    - text
+id: node.anime.body
+field_name: body
+entity_type: node
+bundle: anime
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -11,4 +11,5 @@
 vendor
 web/themes/lefetz_anime/assets/css/*
 /web/sites/default/files/*
+/web/sites/default/settings.php
 /web/themes/contrib

@@ -1,0 +1,20 @@
+uuid: e8e2a1ad-c87a-4043-bc1d-ea11e00b99fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: c7a8c133-2fa5-4ad0-bca6-2177bcc26970
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: lefetz_anime_help
+theme: lefetz_anime
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: ea4ed33f-c4b3-4461-98fd-a2547c509646
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: HrZTblWpMF4fo6BdbBcyHEu5Hp9ds1IZF3FiRd2Q8rU
+id: lefetz_anime_account_menu
+theme: lefetz_anime
+region: navigation_collapsible
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

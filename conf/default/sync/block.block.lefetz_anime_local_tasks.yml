@@ -1,0 +1,22 @@
+uuid: e53d8b07-e14b-43b6-b04b-a39b0d6122c4
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: lefetz_anime_local_tasks
+theme: lefetz_anime
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

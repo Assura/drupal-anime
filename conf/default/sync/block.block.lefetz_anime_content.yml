@@ -1,0 +1,22 @@
+uuid: 378fead5-556e-4090-8eeb-0c8ce77da27b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lefetz_anime
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: lefetz_anime_content
+theme: lefetz_anime
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
