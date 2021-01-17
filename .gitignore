@@ -1,6 +1,7 @@
 .buildpath
 .editorconfig
 .project
+.settings
 /console
 /package-lock.json
 /scripts/assets/node_modules
